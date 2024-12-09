@@ -45,5 +45,15 @@ int main(){
     int arreglo2[] = {1, 2};
     std::cout << "El tamano arreglo int con 2 numeros es 4 cada uno osea 2x4=8 es: "<<sizeof(arreglo2) << std::endl; //----------tamano del arreglo es 8 bytes
 
+    char arreglo3[] = {'a', 'b'};
+    std::cout << "El tamano arreglo char con 2 caracteres es 1 cada uno osea 2x1=2 es: "<<sizeof(arreglo3) << std::endl; //----------tamano del arreglo es 2 bytes
+
+
+    //--------calculo entoces del tamaño de un arreglo se podria asi
+
+    double arreglo4[] = {1.1, 2.2};
+    int tamanoArreglo4= sizeof(arreglo4)/sizeof(arreglo4[0]);
+    std::cout << "El tamano arreglo$ double con 2 numeros es 8 cada uno osea 2x8=16 y el primer elemento pesa 8 al dividir 16/8=2 que es la longitud del areglo es: "<<sizeof(arreglo) << std::endl; //----------tamano del arreglo es 40 bytes
+    
     return 0;
 }
